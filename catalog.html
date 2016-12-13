@@ -23,26 +23,85 @@
             </nav>
         </div>
         <div class="header-bottom">
-
+            <h1>Добро пожаловать в магазин готовых макетов</h1>
         </div>
     </header>
     <main class="container">
-
-    </main>
-    <footer class="main-footer container">
-        <div class="footer-location">
+        <aside class="filters">
+            <form action="echo.php" method="post">
+                <fieldset class="cost">
+                    <legend>Стоимость:</legend>
+                    <div class="cost-values">
+                        <div class="cost-line">
+                            <span class="cost-line-left"></span>
+                            <span class="cost-line-right"></span>
+                        </div>
+                        <div class="range-of-values">
+                            ОТ <input type="text" name="min" value="0"> ДО <input type="text" name="max" value="15000">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="grid">
+                    <legend>Сетка</legend>
+                    <ul>
+                        <li><label><input type="radio" name="cost-variant" value="1" checked>Адаптивная</label></li>
+                        <li><label><input type="radio" name="cost-variant" value="2">Фиксированная</label></li>
+                        <li><label><input type="radio" name="cost-variant" value="3">Резиновая</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset class="features">
+                    <legend>Особенности</legend>
+                    <ul>
+                        <li><label><input type="checkbox" name="feature-1" checked>Слайдер</label></li>
+                        <li><label><input type="checkbox" name="feature-2">Блок преимуществ</li>
+                        <li><label><input type="checkbox" name="feature-3" checked>Новости</li>
+                        <li><label><input type="checkbox" name="feature-4">Галерея</li>
+                        <li><label><input type="checkbox" name="feature-5">Корзина</li>
+                    </ul>
+                </fieldset>
+                <button class="btn" type="button">Показать</button>
+            </form>
+        </aside>
+        <div class="goods-container">
+            <div class="goods-sort">
+                <ul>
+                    <li><a href="#">По цене</a></li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">По функционалу</a></li>
+                </ul>
+                <span class="top">top</span>
+                <span class="bottom">bottom</span>
+            </div>
+            <ul class="goods-items">
+                <li><img src="item-1.jpg" alt="Сайт №1" width="200" height="200"></li>
+                <li><img src="item-2.jpg" alt="Сайт №2" width="200" height="200"></li>
+                <li><img src="item-3.jpg" alt="Сайт №3" width="200" height="200"></li>
+                <li><img src="item-4.jpg" alt="Сайт №4" width="200" height="200"></li>
+                <li><img src="item-5.jpg" alt="Сайт №5" width="200" height="200"></li>
+                <li><img src="item-6.jpg" alt="Сайт №6" width="200" height="200"></li>
+            </ul>
+            <div class="page-change">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Следующая</a>
+            </div>
+        </div>
+        <div class="location">
             <div class="contacts">
                 <p><span>NЁRDS DESIGN STUDIO</span><br>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д 19/8<br><br>тел. +7 (812) 275-75-75</p>
                 <button class="btn red">Напишите нам</button>
             </div>
         </div>
+    </main>
+    <footer class="main-footer container">
         <div class="footer-social">
             <a href="#" class="btn-social btn-social-vk">Вконтакте</a>
             <a href="#" class="btn-social btn-social-fb">Фейсбук</a>
             <a href="#" class="btn-social btn-social-ins">Инстаграм</a>
         </div>
         <div class="footer-promo">
-            <b class="important">Давайте дружить, это выгодно!</b>
+            <p><b class="important">Давайте дружить, это выгодно!</b></p>
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
